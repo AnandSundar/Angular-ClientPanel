@@ -19,7 +19,7 @@
           type="text"
           class="form-control"
           [(ngModel)]="client.firstName"
-          name="firstname"
+          name="firstName"
           #clientFirstName="ngModel"
           minlength="2"
           required
@@ -39,7 +39,7 @@
           type="text"
           class="form-control"
           [(ngModel)]="client.lastName"
-          name="lastname"
+          name="lastName"
           #clientLastName="ngModel"
           minlength="2"
           required
@@ -95,7 +95,7 @@
           [disabled]="disableBalanceOnAdd"
         >
       </div>
-      <input type="bubmit" class="btn btn-primary btn-block" value="Submit">
+      <input type="submit" class="btn btn-primary btn-block" value="Submit">
     </form>
   </div>
 </div>
