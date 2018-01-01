@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 //Angular fire imports
 import { AngularFireDatabaseModule } from 'angularfire2/database-deprecated';
 // import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
   {path:'', component:DashboardComponent},
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
+  {path:'add-client', component:AddClientComponent},
 ];
 
 //congif obtained from firebase console
@@ -58,6 +60,7 @@ export const firebaseconfig = {
   imports: [
     BrowserModule,
     AngularFireDatabaseModule,
+    FormsModule,
     // AngularFireAuthModule,
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(firebaseconfig)

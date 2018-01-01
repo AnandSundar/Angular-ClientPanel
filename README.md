@@ -13,10 +13,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Technologies Used
 
--[Angular 4]
--[Firebase with AngularFire2]
--[Bootstrap]
+- **Angular 4**
+- **Firebase with AngularFire2**
+- **Bootstrap**
 
 ## Dependencies
 
--[Node.js]
+- **Node.js**
