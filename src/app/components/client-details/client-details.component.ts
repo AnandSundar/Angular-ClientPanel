@@ -4,6 +4,7 @@ import { FlashMessagesService } from 'angular2-flash-messages';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Client } from '../../model/Client';
 
+
 @Component({
   selector: 'app-client-details',
   templateUrl: './client-details.component.html',
@@ -19,7 +20,7 @@ export class ClientDetailsComponent implements OnInit {
     public clientService:ClientService,
     public router:Router,
     public route:ActivatedRoute,
-    public flashMesasgesService:FlashMessagesService
+    public flashMessagesService:FlashMessagesService
   ) { }
 
   ngOnInit() {
@@ -34,4 +35,10 @@ export class ClientDetailsComponent implements OnInit {
     })
   }
 
+  updateBalance(id:string){
+    //update client
+    this.clientService.updateClient(this.id, this.client);
+    this.flashMessagesService.show('Balance Updated', {cssClass:'alert-success', timeout: 4000});
+    this.router.navigate(['/client/'+this.id]);
+  }
 }
