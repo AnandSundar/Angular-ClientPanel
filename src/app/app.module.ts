@@ -32,6 +32,7 @@ const appRoutes: Routes = [
   {path:'register', component:RegisterComponent},
   {path:'login', component:LoginComponent},
   {path:'add-client', component:AddClientComponent},
+  {path:'client/:id', component:ClientDetailsComponent},
 ];
 
 //congif obtained from firebase console
