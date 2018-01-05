@@ -1,7 +1,6 @@
 # Clientpanel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
-
+Clientpanel is a backend interface built using Angular to manage client accounts
 
 ## Do This First
 
